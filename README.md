@@ -3,4 +3,4 @@ and interpret data through Tableau for his MS in Applied Analytics at
 Appalachian State University.
 
 Code is heavily commented with the intention of explaining how
-the program worked to someone with no prior programming experience.  
+the program works to someone with no prior programming experience.  
