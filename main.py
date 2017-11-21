@@ -23,13 +23,18 @@ def getTotalReturnedItems(response):
 
 
 def getPages(response, itemNumber, returnedItems, keyword, searchType, outputFile, outputWriter):
-    totalPages = math.ceil(returnedItems/100)
+    totalPages = getTotalNumberOfPages(returnedItems)
     printNumberOfItems(returnedItems, searchType)
     for i in range(totalPages):
         time.sleep(.2)
         itemNumber = retrievePage(i, itemNumber, searchType, keyword, totalPages, outputFile, outputWriter)
         print('Page [' + str(i+1) + '/' + str(totalPages) + '] successfully written to file')
     return itemNumber
+
+
+def getTotalNumberOfPages(returnedItems):
+    totalPages = math.ceil(returnedItems/100)
+    return totalPages
 
 
 def printNumberOfItems(returnedItems, searchType):
