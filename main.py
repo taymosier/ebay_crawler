@@ -167,6 +167,6 @@ def splitDate(time):
 
 
 # The api varibale makes the initial API call and its value is inserted into the mainFunction() as a parameter
-api = Finding(appid='TaylorMo-PythonEB-PRD-e5d865283-1005e2c5', config_file=None)
+api = Finding(appid='YOURAPPID', config_file=None)
 # This is what calls the main function and begins the chain of events for the script
 mainFunction(api)
